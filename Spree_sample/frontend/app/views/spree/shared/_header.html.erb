@@ -1,0 +1,12 @@
+<div style="width=100%;height:50px;Background-color:black"> 
+	<%= render :partial => 'spree/shared/nav_bar' %>
+</div>
+<header id="header" class="row" data-hook>
+ <!--  <figure id="logo" class="columns six" data-hook><%= logo %></figure> -->
+            <figure id="logo" class="columns six" data-hook>
+     			<img src="<%= asset_path( 'logo.jpeg' ) %>"  width="300" height="150" />
+			</figure>
+			           <%= render :partial => 'spree/shared/search' %>
+
+        <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+</header>
